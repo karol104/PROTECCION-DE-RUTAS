@@ -1,0 +1,85 @@
+
+:root {
+
+  /*  CAMBIA SOLO ESTE VALOR PARA MODIFICAR EL COLOR EN TODA LA APLICACIÓN  */
+  --color-primary: #39A900;
+  --color-primary-hover: #2d8800;
+  
+  /*  CAMBIA SOLO ESTE VALOR PARA MODIFICAR LA FUENTE EN TODA LA APLICACIÓN  */
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Roboto', sans-serif;
+  --font-family-mono: 'Courier New', monospace;
+  
+  /* COLORES DE TEXTO */
+  --color-text-primary: #333;
+  --color-text-secondary: #666;
+  --color-text-light: #888;
+  --color-text-white: #ffffff;
+  
+  /* COLORES DE FONDO */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f5f5f5;
+  --color-bg-light: #f8faf8;
+  --color-bg-hover: rgba(57, 169, 0, 0.08);
+  --color-bg-hover-light: rgba(57, 169, 0, 0.03);
+  --color-bg-active: rgba(57, 169, 0, 0.12);
+  --color-bg-active-light: rgba(57, 169, 0, 0.05);
+  
+  /* COLORES DE BORDE */
+  --color-border-primary: var(--color-primary); /* Mismo tono que el color primario */
+  --color-border-light: #e0e0e0;
+  --color-border-hover: rgba(57, 169, 0, 0.2);
+  
+  /* COLORES DE ESTADO */
+  --color-success: #2e7d32;
+  --color-success-bg: #e8f5e9;
+  --color-error: #c62828;
+  --color-error-bg: #ffebee;
+  --color-warning: #e65100;
+  --color-warning-bg: #fff3e0;
+  --color-info: #1565c0;
+  --color-info-bg: #e3f2fd;
+  
+  /* COLORES DE GRADIENTES (usando solo el color primario) */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  --gradient-primary-vertical: linear-gradient(180deg, var(--color-primary), var(--color-primary-hover));
+  --gradient-primary-diagonal: linear-gradient(135deg, var(--color-primary-hover), var(--color-primary));
+  --gradient-primary-dark: linear-gradient(135deg, var(--color-primary-hover), var(--color-primary-hover));
+  --gradient-icon: linear-gradient(135deg, #f0f5f0, #e8f0e8);
+  --gradient-icon-hover: linear-gradient(135deg, #e8f5e8, #d8eed8);
+  
+  /* COLORES DE SOMBRAS */
+  --shadow-primary: rgba(57, 169, 0, 0.1);
+  --shadow-primary-medium: rgba(57, 169, 0, 0.15);
+  --shadow-primary-strong: rgba(57, 169, 0, 0.3);
+  --shadow-general: rgba(0, 0, 0, 0.1);
+  --shadow-general-medium: rgba(0, 0, 0, 0.15);
+  --shadow-general-strong: rgba(0, 0, 0, 0.18);
+  
+  /* COLORES ADICIONALES */
+  /* Color de hover basado en el primario */
+  --color-bg-gradient-start: #ffffff;
+  --color-bg-gradient-end: #f8faf8;
+}
+
+/* Aplicar la fuente primaria globalmente a toda la aplicación */
+html, body {
+  font-family: var(--font-family-primary);
+}
+
+/* Contenedores de controles (filtros/acciones) alineados con las tablas */
+.filters-wrapper {
+  width: 88%;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+/* Ajuste del contenedor que envuelve el título/hero para mantenerlo alineado con tablas */
+.hero-card {
+  width: 88%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+
+
